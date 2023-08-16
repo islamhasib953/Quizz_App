@@ -11,7 +11,7 @@ class OpeningScreen extends StatelessWidget {
       body: Container(
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
             image: DecorationImage(
                 image: AssetImage(
                   "assets/images/background2.jpg",
@@ -42,16 +42,16 @@ class OpeningScreen extends StatelessWidget {
               style:
                   GoogleFonts.dancingScript(fontSize: 50, color: Colors.yellow),
             ),
-            SizedBox(
+            const SizedBox(
               height: 20,
             ),
             Text(
               "We are creative, enjoy our app",
               style: GoogleFonts.pacifico(fontSize: 25, color: Colors.white),
             ),
-            Spacer(),
+            const Spacer(),
             Container(
-              margin: EdgeInsets.symmetric(horizontal: 12),
+              margin: const EdgeInsets.symmetric(horizontal: 12),
               child: ElevatedButton(
                   onPressed: () {
                     Navigator.push(
@@ -61,7 +61,7 @@ class OpeningScreen extends StatelessWidget {
                       ),
                     );
                   },
-                  child: Text("Start")),
+                  child: const Text("Start")),
               width: double.infinity,
             ),
           ],
